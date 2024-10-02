@@ -6,16 +6,48 @@
 
   <!-- Inline styles go between style tags -->
   <style>
+  /* Tag level selector */
+  h1 {
+    color: red;
+  }
 
+  /* Parent to child selector */
+  fieldset > p {
+    color: green;
+  }
+
+  /* ID selector (use #) */
+  #ccn{
+    font-size: 14pt;
+  }
+
+  /* Class selector */
+  .help{
+    color: gray;
+  }
+
+  /* Sibling Selector */
+  label ~ input{
+    clear:both;
+    display:block;
+  }
+
+  /* Attribute Selector */
+  input[type="text"]{
+    background-color: red;
+  }
 
   </style>
 
 
 </head>
 <body>
-<form method="GET" action="/processor">
+
   <h1>Buy Tickets to the Web Developer Gala</h1>
   <p>Tickets are $10 each. Dinner packages are an extra $5. All fields are required.</p>
+
+
+  <form method="GET" action="/processor">
   <fieldset>
     <legend>Tickets and Add-ons</legend>
 
